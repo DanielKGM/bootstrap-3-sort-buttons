@@ -7,7 +7,7 @@ The plugin supports Bootstrap 3 or above.
 
 - **Dynamic Sorting Buttons**: Automatically adds sorting buttons to specified table headers.
 - **Local Storage Integration**: Remembers sorting preferences (column, data type, and direction) using `localStorage`.
-- **Multiple Table Support**: Works seamlessly with multiple tables on the same page.
+- **Multiple Table Support**: Works seamlessly with multiple tables on the same page (only one table can be sorted at a time).
 
 ### Local Storage Parameters
 - `fieldName`: Text reference to the data field that the column represents.
