@@ -47,21 +47,21 @@
       >
         <thead>
           <tr>
-            <th class="text-center col-sm-2" data-nomecampo="title">TASK</th>
-            <th class="text-center col-sm-2" data-nomecampo="resp.name">
+            <th class="text-center col-sm-2" data-fieldname="title">TASK</th>
+            <th class="text-center col-sm-2" data-fieldname="resp.name">
               RESPONSIBLE
             </th>
             <th class="text-center col-sm-2">PRIORITY</th>
             <th
               class="text-center col-sm-2"
-              data-nomecampo="price"
+              data-fieldname="price"
               data-isnumeric="true"
             >
               PRICE
             </th>
             <th
               class="text-center col-sm-2"
-              data-nomecampo="deadline"
+              data-fieldname="deadline"
               data-isnumeric="true"
             >
               DEADLINE
@@ -123,8 +123,8 @@
       >
         <thead>
           <tr>
-            <th class="text-center" data-nomecampo="title">NAME</th>
-            <th class="text-center" data-nomecampo="id" data-isnumeric="true">
+            <th class="text-center" data-fieldname="title">NAME</th>
+            <th class="text-center" data-fieldname="id" data-isnumeric="true">
               ID
             </th>
           </tr>
@@ -177,9 +177,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
     <script src="sort-buttons/sort-buttons.js"></script>
     <script type="text/javascript">
-      // INICITALIZE ativaOrdenacao(tableID, formID)
-      ativaOrdenacao("tasksTable", "filterTasks");
-      ativaOrdenacao("usersTable", "filterUsers");
+      // INICITALIZE triggerSorting(tableID, formID)
+      triggerSorting("tasksTable", "filterTasks");
+      triggerSorting("usersTable", "filterUsers");
     </script>
   </body>
 </html>
