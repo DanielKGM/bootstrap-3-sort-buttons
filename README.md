@@ -3,15 +3,15 @@
 This plugin allows you to dynamically add sorting buttons to table headers in a web application. It was developed by **Daniel Campos Galdez** and has been successfully used in real systems for the regional electoral court.
 
 The plugin supports Bootstrap 3 or above.
+## [Live Demonstration](link-to-demo)
+
+![Preview](preview.png)
+
 ## Features
 
 - **Dynamic Sorting Buttons**: Automatically adds sorting buttons to specified table headers.
 - **Local Storage Integration**: Remembers sorting preferences (column, data type, and direction) using `localStorage`.
 - **Multiple Table Support**: Works seamlessly with multiple tables on the same page (only one table can be sorted at a time).
-
-## [Live Demonstration](link-to-demo)
-
-![Preview](preview.png)
 
 ### Local Storage Parameters
 - `fieldName`: Text reference to the data field that the column represents.
