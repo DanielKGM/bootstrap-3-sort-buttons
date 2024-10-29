@@ -1,0 +1,15 @@
+table {
+  table-layout: fixed;
+}
+
+th {
+  background-color: #6b6b6b;
+  color: #cccccc;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+tbody {
+  white-space: normal;
+}

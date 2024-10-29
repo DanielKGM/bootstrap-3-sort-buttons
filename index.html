@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- EXAMPLE INDEX -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 3 Sort Buttons</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+    />
+
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="sort-buttons/sort-buttons.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="table table-responsive"
+      style="
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <h1>Bootstrap 3 Table Sorting Buttons <small>by Daniel Galdez</small></h1>
+      <div style="margin: 10px auto 10px auto">
+        <span class="label label-info" style="font-size: 1.5rem">TASKS</span>
+      </div>
+      <table
+        class="table table-striped table-hover table-bordered"
+        id="tasksTable"
+      >
+        <thead>
+          <tr>
+            <th class="text-center col-sm-2" data-nomecampo="title">TASK</th>
+            <th class="text-center col-sm-2" data-nomecampo="resp.name">
+              RESPONSIBLE
+            </th>
+            <th class="text-center col-sm-2">PRIORITY</th>
+            <th
+              class="text-center col-sm-2"
+              data-nomecampo="price"
+              data-isnumeric="true"
+            >
+              PRICE
+            </th>
+            <th
+              class="text-center col-sm-2"
+              data-nomecampo="deadline"
+              data-isnumeric="true"
+            >
+              DEADLINE
+            </th>
+            <th class="text-center col-sm-1">ACTIONS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Clean the room</td>
+            <td>Carl Johson</td>
+            <td class="text-center">
+              <span class="label label-danger">HIGH</span>
+            </td>
+            <td>200.50</td>
+            <td>06/01/2024</td>
+            <td class="text-center">
+              <a class="btn btn-danger btn-sm" href="#">
+                <i class="fa fa-trash"></i
+              ></a>
+              <a class="btn btn-default btn-sm" href="#">
+                <i class="fa fa-cog"></i
+              ></a>
+            </td>
+          </tr>
+          <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+          <tr>
+            <td>Pest Detization</td>
+            <td>Robert Downey Jr.</td>
+            <td class="text-center">
+              <span class="label label-warning">IMPORTANT</span>
+            </td>
+            <td>1200.12</td>
+            <td>05/20/2024</td>
+            <td class="text-center">
+              <a class="btn btn-danger btn-sm" href="#">
+                <i class="fa fa-trash"></i
+              ></a>
+              <a class="btn btn-default btn-sm" href="#">
+                <i class="fa fa-cog"></i
+              ></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin: 10px auto 10px auto">
+        <span class="label label-info" style="font-size: 1.5rem">USERS</span>
+      </div>
+      <table
+        class="table table-striped table-hover table-bordered"
+        id="usersTable"
+      >
+        <thead>
+          <tr>
+            <th class="text-center" data-nomecampo="title">NAME</th>
+            <th class="text-center" data-nomecampo="id" data-isnumeric="true">
+              ID
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Josuah Saint</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+          <tr>
+            <td>Antoine Colorado</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin: 0 auto 100px auto; font-size: 2rem">
+        <span
+          class="label label-default"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="To Be Used By The API/Controller"
+        ></span>
+        <span
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="(UTIL) Numeric Fields or Dates May Have Query Implications"
+          class="label label-default"
+        ></span>
+        <span
+          class="label label-default"
+          toggle="tooltip"
+          data-placement="bottom"
+          title="Query Sorting Direction"
+        ></span>
+        <span
+          class="label label-default"
+          toggle="tooltip"
+          data-placement="bottom"
+          title="Prevent Field Or Table Conflicts"
+        ></span>
+      </div>
+      <form id="filterTasks"></form>
+      <form id="filterUsers"></form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="sort-buttons/sort-buttons.js"></script>
+    <script type="text/javascript">
+      // INICITALIZE ativaOrdenacao(tableID, formID)
+      ativaOrdenacao("tasksTable", "filterTasks");
+      ativaOrdenacao("usersTable", "filterUsers");
+    </script>
+  </body>
+</html>
