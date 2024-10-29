@@ -9,6 +9,10 @@ The plugin supports Bootstrap 3 or above.
 - **Local Storage Integration**: Remembers sorting preferences (column, data type, and direction) using `localStorage`.
 - **Multiple Table Support**: Works seamlessly with multiple tables on the same page (only one table can be sorted at a time).
 
+## [Live Demonstration](link-to-demo)
+
+![Preview](preview.png)
+
 ### Local Storage Parameters
 - `fieldName`: Text reference to the data field that the column represents.
 - `isNumeric`: Boolean flag to specify if the data type is numeric (`true` if numeric).
@@ -33,8 +37,4 @@ The plugin supports Bootstrap 3 or above.
    - `data-isnumeric="true"`: (Optional) Set to `true` if the column data is numeric.
 
 2. The script will automatically add sorting buttons and style to headers with these attributes, allowing users to click on them.
-
-## [Live Demonstration](link-to-demo)
-
-![Preview](preview.png)
 
