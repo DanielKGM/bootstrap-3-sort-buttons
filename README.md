@@ -22,7 +22,7 @@ The plugin supports Bootstrap 3 or above.
    - `sort-buttons.js` for the sorting functionality.
 
 2. Invoke the sorting function by calling:
-   - `startOrder(tableID, formID);`
+   - `triggerSorting(tableID, formID);`
    
    where `tableID` is the ID of the table to be sorted, and `formID` is the ID of the form responsible for handling sorting.
 
