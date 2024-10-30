@@ -3,7 +3,7 @@
 This plugin allows you to dynamically add sorting buttons to table headers in a web application. It was developed by **Daniel Campos Galdez** and has been successfully used in real systems for the regional electoral court.
 
 The plugin supports Bootstrap 3 or above.
-## [Live Demonstration](link-to-demo)
+## [Live Demonstration](https://danielkgm.github.io/bootstrap-table-sort-buttons/)
 
 ![Preview](preview.png)
 
